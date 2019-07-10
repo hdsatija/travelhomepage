@@ -46,6 +46,20 @@ margin-top: 2%;
 .book{
     padding-top: 5%;
 }
+.navb{
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    margin-top: 0%;
+}
+.navb1{
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    background-color: #1d6d88;
+    margin-top: 0%;
+}
 #navbarNavAltMarkup{
 margin-left: 10%;
 }
@@ -491,7 +505,6 @@ font-weight: 600;
 color: #636161;
 left: 40%;
 font-size: 14px;
-position: relative;
 letter-spacing: 4px;
 }
 .surfboardprice {
@@ -499,17 +512,15 @@ color: #ce60a8;
 left: 40%;
 font-size: 15px;
 letter-spacing: 1px;
-position: relative;
 }
 .setpad01{
 padding-left: 9%;
 }
 .surfboard2 {
-width: 200%;
+width: 100%;
 font-size: 16px;
 left: 0%;
 color: #4a4a4a;
-position: relative;
 }
 img{
 max-width: 125%;
@@ -608,168 +619,256 @@ margin-left:12%;
 }
 }
 /* mobile devices */
-@media only screen and (max-width: 750px) {
-.container{
-max-width: 100%;
-}
-img{
-max-width: 100%;
-height: auto;
-}
-iframe {
-/* padding-left: 12%; */
-/* padding: 13%; */
-max-width: 100%;
-height: auto;
-margin-left: 0%;
-}
-.leftarrow{
-display: none !important;
-}
-.rightarrow{
-display: none;
-}
-.textheading{
-padding-left: unset;
-padding-right: unset;
-}
-.surfboard {
-position: absolute;
-top: 40%;
-left: 85%;
-}
-.surfboard2 {
-width: 200%;
-left: 0%;
-color: #4a4a4a;
-position: relative;
-font-size: 20px;
-}
-.board {
-position: absolute;
-left: 14%;
-top: 40%;
-padding-left: 0%;
-height: 61%;
-z-index: 0;
-width: 45%;
-background-color: #ececec;
-}
-.board1{
-margin-left: 0%;
-}
-.board2{
-margin-left: 0%;
-}
-.imagevideo {
-margin-top: 4%;
-padding: 8%;
-}
-.side {
-position: relative;
-top: -136%;
-/* left: -26px; */
-float: left;
-right: 70px;
-transform: rotate(180deg);
-color: #dcd6d6;
-font-weight: bold;
-writing-mode: vertical-rl;
-text-orientation: sideways;
-font-size: 12px;
-letter-spacing: 3px;
-}
-.logoup {
-display: none;
-/* padding-top: 120px; */
-}
-.carousel-caption {
-/* right: 15%; */
-bottom: 0%; 
-font-family: 'Open Sans', sans-serif;
-/* left: 15%; */
-margin-left: -100%;
-z-index: 10;
-/* padding-top: 20px; */
-padding-bottom: 20px;
-color: black;
-/* text-align: center; */
-}
-.text1 {
-font-family: 'Open Sans', sans-serif;
-font-size: 25px;
-margin-left: 15%;
-font-weight: 700;
+@media only screen and (max-width: 950px) {
+        
+        .container{
+        max-width: 100%;
+        }
+
+        .setcont1 { display: flex; flex-flow: column; }
+            .one { order: 1; }
+            .two { order: 2;    padding-top: 4%;  }   
+        
+        img{
+        max-width: 100%;
+        height: auto;
+        }
+        iframe {
+                margin-top: 5%;
+        /* padding-left: 12%; */
+        /* padding: 13%; */
+        max-width: 100%;
+        height: auto;
+        margin-left: 0%;
+        }
+        .setcont{
+            padding-top: 5%;
+        }
+        .set01{
+            padding-top: 5%;
+        }
+        .leftarrow{
+        display: none !important;
+        }
+        .rightarrow{
+        display: none;
+        }
+        .textset{
+            text-align: center;
+        }
+          
+
+        .showall {
+              width: 20%;
+        }
+        .textheading{
+        padding-left: unset;
+        padding-right: unset;
+        }
+        .surfboardprice{
+           position: unset;
+        }
+        .surfboard {
+
+        }
+        .surfboard2 {
+        width: 100%;
+        color: #4a4a4a;
+        font-size: 20px;
+        }
+        .surfboard {
+            /* left: 77%; */
+            position: static;
+            top: 40%;
+        }
+        .surfboard2 {
+            left: 0%;
+        }
+        .surfboardbuy {
+            font-weight: 600;
+            color: #636161;
+            /* left: 68%; */
+            font-size: 15px;
+            position: static;
+            letter-spacing: 4px;
+        }
+        .board {
+              margin: 0 auto;
+            padding-left: 0%;
+            text-align: center;
+            height: 0%;
+            /* margin-left: 13%; */
+            position: unset;
+            /* width: 0; */
+
+        }
+        .board1{
+        margin-left: 0%;
+        }
+        .board2{
+        margin-left: 0%;
+        }
+        .imagevideo {
+        margin-top: 4%;
+        padding: 8%;
+        }
+        .setimage {
+            position: static;
+            }
+        .side {
+            display: none;
+        position: relative;
+        top: -136%;
+        /* left: -26px; */
+        float: left;
+        right: 70px;
+        transform: rotate(180deg);
+        color: #dcd6d6;
+        font-weight: bold;
+        writing-mode: vertical-rl;
+        text-orientation: sideways;
+        font-size: 12px;
+        letter-spacing: 3px;
+        }
+        .logoup {
+        display: none;
+        /* padding-top: 120px; */
+        }
+        .carousel-caption {
+        /* right: 15%; */
+        bottom: 0%; 
+        font-family: 'Open Sans', sans-serif;
+        /* left: 15%; */
+        margin-left: -100%;
+        z-index: 10;
+        /* padding-top: 20px; */
+        padding-bottom: 20px;
+        color: black;
+        /* text-align: center; */
+        }
+        .text1 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25px;
+        margin-left: 15%;
+        font-weight: 700;
+        }
+        .heading{
+                display: none;
+        }
+        .fa, .fas {
+            color: white;
+        }
+
+        .side1 {
+            display: none;
+        transform: rotate(180deg);
+        color: #dcd6d6;
+        position: relative;
+        top: -100%;
+        left: 770%;
+        /* font-weight: bold; */
+        /* margin-left: 115%; */
+        /* padding-left: 45%; */
+        writing-mode: vertical-rl;
+        text-orientation: sideways;
+        font-size: 12px;
+        letter-spacing: 3px;
+        }
+
+        .side2 {
+            display: none;
+        position: relative;
+        top: 100%;
+        left: -26px; 
+        float: left;
+        right: 70px;
+        transform: rotate(180deg);
+        color: #dcd6d6;
+        font-weight: bold;
+        writing-mode: vertical-rl;
+        text-orientation: sideways;
+        font-size: 12px;
+        letter-spacing: 3px;
+        }
+        .setcont1 {
+                padding-bottom: 5%;
+            margin-top: 4%;
+            padding-left: 10%;
+        }
+        .setback{
+            text-align: center;
+        }
+        .form-control {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: rgb(212, 207, 207);
+            height: 40px;
+            background-color: rgb(245, 245, 245) !important;
+            border: unset;
+        }
+        .button1 {
+            position: relative;
+            left: 98%;
+            font-weight: bold;
+            font-size: 19px;
+            margin-top: -32%;
+        }
+        .head {
+            margin: auto;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+            color: #fff2f2;
+        }
+        .subhead {
+            padding-top: 2%;
+            color: white;
+            margin: auto;
+            text-align: center;
+        }
+        .set02{
+        padding-top:15%;
+        }
+
+        .logoset{
+        position: absolute;
+        }
+
 }
 
-.side1 {
-transform: rotate(180deg);
-color: #dcd6d6;
-position: relative;
-top: -100%;
-left: 770%;
-/* font-weight: bold; */
-/* margin-left: 115%; */
-/* padding-left: 45%; */
-writing-mode: vertical-rl;
-text-orientation: sideways;
-font-size: 12px;
-letter-spacing: 3px;
-}
-
-.side2 {
-position: relative;
-top: 100%;
-left: -26px; 
-float: left;
-right: 70px;
-transform: rotate(180deg);
-color: #dcd6d6;
-font-weight: bold;
-writing-mode: vertical-rl;
-text-orientation: sideways;
-font-size: 12px;
-letter-spacing: 3px;
-}
-.setcont1 {
-    margin-top: 4%;
-    padding-left: 10%;
-}
-.form-control {
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: rgb(212, 207, 207);
-    height: 40px;
-    background-color: rgb(245, 245, 245) !important;
-    border: unset;
-}
-.button1 {
-    position: relative;
-    left: 98%;
-    font-weight: bold;
-    font-size: 19px;
-    margin-top: -50%;
-}
-.set02{
-padding-top:15%;
-}
-
-.logoset{
-position: absolute;
-}
-}
-
-        @media only screen and (max-width: 750px){
+        
+@media only screen and (max-width: 750px){
     .setcont1 {
     margin-top: 0%;
     padding-left: 10%;
 }
-}</style>
+}
+
+</style>
+
+<script type="text/javascript">
+    $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 500) {
+        //clearHeader, not clearheader - caps H
+        $(".navb").addClass("navb1");
+        $(".navb1").removeClass("navb");
+    }
+    if (scroll < 500) {
+        //clearHeader, not clearheader - caps H
+        $(".navb1").addClass("navb");
+        $(".navb").removeClass("navb1");
+    }
+}); 
+</script>
+
 </head>
 <body>
     <!-- Nav bar start -->
-        <nav class="navbar navbar-expand-lg  ">
+        <nav class="navbar navbar-expand-lg navb ">
             <h1  class="text1">Travel India</h1>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -778,10 +877,10 @@ position: absolute;
                   <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="#">Home </a>
                     <a class="nav-item nav-link " href="#Book">Book </a>
-                    <a class="nav-item nav-link " href="#Manage">Manage </a>
+                    <a class="nav-item nav-link " href="#board">Manage </a>
                     <a class="nav-item nav-link " href="#about">About </a>
                     <a class="nav-item nav-link " href="#stories">Stories </a>
-                    <a class="nav-item nav-link" href="#event">Contact</a>
+                    <a class="nav-item nav-link" href="#Contact">Contact</a>
                     <a class="nav-item nav-link" href="#place">Login</a>
                   </div>
                 </div>
@@ -800,7 +899,7 @@ position: absolute;
                 </ul>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img class="img-responsive" src="heading.jpeg" alt="Los Angeles" width="1100" height="500">
+                    <img class="img-fluid" src="heading.jpeg" alt="Los Angeles" width="1100" height="500">
                     <div class="carousel-caption">
                         <div class="heading">
                             <div class="text1" style="color: white;">BE THERE, DO THAT!</div>
@@ -811,11 +910,11 @@ position: absolute;
                     </div>   
                   </div>
                   <div class="carousel-item ">
-                        <img class="img-responsive" src="logo2.png" alt="Los Angeles" width="1100" height="500">
+                        <img class="img-fluid" src="logo2.png" alt="Los Angeles" width="1100" height="500">
                         
                     </div>
                     <div class="carousel-item ">
-                            <img class="img-responsive" src="logo3.png" alt="Los Angeles" width="1100" height="500">
+                            <img class="img-fluid" src="logo3.png" alt="Los Angeles" width="1100" height="500">
                               
                     </div>
                 </div>
@@ -828,19 +927,19 @@ position: absolute;
             <div class="logoup" >
                     <span class="new">
                            <a href="" class="downnav"> 
-                         <img class="img-responsive" src="c.svg">
+                         <img class="img-fluid" src="c.svg">
 
                         </a>
                     </span>
                     <span class="new">
                             <a href="" class="downnav"> 
-                            <img class="img-responsive" src="twter.svg">
+                            <img class="img-fluid" src="twter.svg">
 
                             </a>
                      </span>  
                      <span class="new">
                             <a href="" class="downnav"> 
-                          <img class="img-responsive" src="v.svg">
+                          <img class="img-fluid" src="v.svg">
 
                             </a>
                      </span>     
@@ -850,10 +949,10 @@ position: absolute;
 </div>
 
           <!-- close carousel -->
-<div class="container book">
+<div class="container book" id="Book">
 
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-11">
             <h1>Book Flight Ticket</h1>
     <div class="main-agileinfo">
         <div class="sap_tabs">          
@@ -1144,7 +1243,7 @@ position: absolute;
     </div>
 </div>
           <!-- start about surfing  -->
-<div class="container">
+<div class="container" id="about">
     <div class="row">
         <div class="col-md-12 textheading">
             <div class="aboutsurfing"  >
@@ -1165,7 +1264,7 @@ position: absolute;
     <div class="row">
         <div class="col-md-5">
             <div class="row">
-            <img src="you.jpg" class="img-responsive">
+            <img src="you.jpg" class="img-fluid">
             </div>
             <div class="row " >
                 <p class="videoside"> 
@@ -1201,7 +1300,7 @@ position: absolute;
                     <i class="fa fa-chevron-left leftarrow" aria-hidden="true"></i>
             </div>
             <div class="col-md-2 board1" >
-            <img class="img-responsive setimage " src="Am.jpg"  >
+            <img class="img-fluid setimage " src="Am.jpg"  >
             <div class="board">
                     <div class="surfboard">
                             <h3 class="surfboard2">Amsterdam</h3>
@@ -1213,7 +1312,7 @@ position: absolute;
             </div>
         </div>   
         <div class="col-md-2 board2">
-                <img class="img-responsive setimage " src="B.jpg" >
+                <img class="img-fluid setimage " src="B.jpg" >
                 <div class="board">
                         <div class="surfboard">
                                 <h3 class="surfboard2">Budapest </h3>
@@ -1225,7 +1324,7 @@ position: absolute;
                 </div>
             </div> 
             <div class="col-md-2 board2">
-                    <img class="img-responsive setimage " src="P.jpg" >
+                    <img class="img-fluid setimage " src="P.jpg" >
                     <div class="board">
                             <div class="surfboard">
                                     <h3 class="surfboard2"> Paris</h3>
@@ -1264,7 +1363,7 @@ position: absolute;
                     </div>
         </div>
         <div class="col-md-6">
-            <img src="group.jpg" class="img-responsive set01">
+            <img src="group.jpg" class="img-fluid set01">
         </div>
         <div class="setpad01" >
                 <p class="side"> Travel India
@@ -1281,11 +1380,11 @@ position: absolute;
                     <p class=" side2"> Travel India
                     </p>
                 </div>
-        <div class=" col-xs-10 col-md-6" >
-          <img src="hol.jpg" class="img-responsive">
+        <div class=" col-xs-10 col-md-6 two" >
+          <img src="hol.jpg" class="img-fluid">
 
         </div>
-        <div class="col-md-4 set02">
+        <div class="col-md-4 set02 one">
                 <div class="setnumber">
                         02
                     </div>
@@ -1324,32 +1423,32 @@ position: absolute;
                     <i class="fa fa-chevron-left leftarrow" aria-hidden="true"></i>
             </div>
             <div class="col-md-3 board1" >
-                <img class="img-responsive setimage " src="Amritsar.jpg"  >
+                <img class="img-fluid setimage " src="Amritsar.jpg"  >
                 <div class="col-md-12">
-                        <div class=" ">
-                                <h3 class="row title">Amritsar</h3>
-                                  <div class="row price" >Start at $150</div>
-                                  <a class=" row buy" href="#">BUY</a>
+                        <div class="textset">
+                                <h3 class=" title">Amritsar</h3>
+                                  <div class=" price" >Start at $150</div>
+                                  <a class="  buy" href="#">BUY</a>
                         </div>
                 </div>
             </div>
         <div class="col-md-3 board1" >
-            <img class="img-responsive setimage " src="Goa.jpg"  >
+            <img class="img-fluid setimage " src="Goa.jpg"  >
             <div class="col-md-12">
-                    <div class=" ">
-                            <h3 class="row title">Goa</h3>
-                              <div class="row price" >Start at $150</div>
-                              <a class=" row buy" href="#">BUY</a>
+                    <div class="textset">
+                            <h3 class=" title">Goa</h3>
+                              <div class=" price" >Start at $150</div>
+                              <a class="buy" href="#">BUY</a>
                     </div>
             </div>
         </div>  
         <div class="col-md-3 board1" >
-            <img class="img-responsive setimage " src="Dehradun.jpg"  >
+            <img class="img-fluid setimage " src="Dehradun.jpg"  >
             <div class="col-md-12">
-                    <div class=" ">
-                            <h3 class="row title">Dehradun</h3>
-                              <div class="row price" >Start at $250</div>
-                              <a class=" row buy" href="#">BUY</a>
+                    <div class="textset">
+                            <h3 class="title">Dehradun</h3>
+                              <div class="price" >Start at $250</div>
+                              <a class=" buy" href="#">BUY</a>
                     </div>
             </div>
         </div>     
@@ -1361,7 +1460,6 @@ position: absolute;
         </div>
         <div class="showall" >SHOW ALL</div>
     </div>
-<div class="setback1">
 
 <div class="line line1">
     </div>
@@ -1369,7 +1467,7 @@ position: absolute;
 <!-- close point  -->
 
  <!-- start join -->
- <div class="container " id="gettouch">
+ <div class="container " id="Contact">
         <div class="row">
             <div class="col-md-12 textheading1">
                 <div class="leftheading scolor">
@@ -1395,7 +1493,7 @@ Be the first to receive exclusive offers and the latest news on our products & s
 <div class="container setcont1">
             <div class="row">
                 <div class="col-md-6" >
-                  <img src="03.png" class="img-responsive" style="width:100%">
+                  <img src="03.png" class="img-fluid" style="width:100%">
                 </div>
                 <div class="col-md-4" style=" padding-top: 6%;">
                         
@@ -1491,6 +1589,7 @@ Be the first to receive exclusive offers and the latest news on our products & s
                 
 
 </div>
+<div class="container">
 <div class="row">
                     <div class="col-md-12 textheading1">
                         <div class="">
@@ -1499,27 +1598,25 @@ Be the first to receive exclusive offers and the latest news on our products & s
                         <div class="oneside1"  >
                             <span class="">
                                    <a href="" class="downnav"> 
-                                 <img class="img-responsive" src="c.svg">
+                                 <img class="img-fluid" src="c.svg">
    
                                 </a>
                             </span>
                             <span class="">
                                     <a href="" class="downnav"> 
-                                    <img class="img-responsive" src="twter.svg">
+                                    <img class="img-fluid" src="twter.svg">
 
                                     </a>
                              </span>  
                              <span class="">
                                     <a href="" class="downnav"> 
-                                  <img class="img-responsive" src="v.svg">
+                                  <img class="img-fluid" src="v.svg">
 
                                     </a>
                              </span>     
                         </div>
                     </div>   
                 </div>
-<br>
-    <br>
-    <br>
-    <br>
+            </div>
+
 </body>
